@@ -4,15 +4,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class CounterCubit extends Cubit<CounterState> {
   CounterCubit() : super(InitialState());
 
-  int teamApoints = 0;
-  int teamBpoints = 0;
-  void TeamIncement({required String team, required int points}) {
+  int teamAPoints = 0;
+  int teamBPoints = 0;
+  void teamIncement({required String team, required int points}) {
     if (team == 'A') {
-      teamApoints += points;
+      teamAPoints += points;
       emit(CounterAIncrementState());
     } else {
-      teamBpoints += points;
+      teamBPoints += points;
       emit(CounterBIncrementState());
     }
+  }
+
+  void teamPointerReset() {
+    teamAPoints = 0;
+    teamBPoints = 0;
   }
 }
