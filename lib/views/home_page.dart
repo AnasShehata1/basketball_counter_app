@@ -1,9 +1,6 @@
 import 'package:basketball_points_counter/cubits/counter_cubit.dart';
 import 'package:basketball_points_counter/cubits/counter_states.dart';
-import 'package:basketball_points_counter/widgets/add_point_button.dart';
-import 'package:basketball_points_counter/widgets/custom_text.dart';
 import 'package:basketball_points_counter/widgets/points_counter_body.dart';
-import 'package:basketball_points_counter/widgets/reset_points_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
